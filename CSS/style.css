@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    padding: 10px;
+    background-color: #0f0f0f;
+
+}
+
+html {
+
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    height: 90vh;
+    grid-template-columns: .7fr 1fr 1fr 1fr;
+    grid-template-rows: .3fr .1fr 1.2fr 1fr;
+    grid-template-areas:
+        "head head head head"
+        "aside main main main"
+        "aside section1 section1 section1";
+
+
+}
+
+
+.left-div {
+    padding-left: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    gap: 5px;
+}
+
+.left-div img.menu {
+    margin-right: 15px;
+    width: 25px;
+}
+
+.left-div h3 {
+    color: white;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.right-div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+    gap: 10px;
+
+}
+
+
+header div input {
+    width: 60%;
+    height: 37px;
+
+    padding: 3px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    color: white;
+    background-color: transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+header div img.logo {
+
+    width: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+header div img.search {
+    height: 37px;
+    padding: 8px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+header div img.mic {
+    margin-left: 20px;
+    padding: 5px;
+    width: 40px;
+
+    border: 1px solid rgb(82, 81, 81);
+    border-radius: 50%;
+}
+
+header div img.mic:hover {
+    background-color: rgb(41, 37, 37);
+    cursor: pointer;
+}
+
+#head {
+    grid-area: head;
+    padding: 6px;
+    background-color: #0f0f0f;
+    display: grid;
+    grid-template-columns: 1fr 3.3fr 1fr;
+
+
+}
+
+#side {
+    background-color: #0f0f0f;
+    grid-area: aside;
+    min-height: 89vh;
+    padding: 2px;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    scrollbar-color: rgb(47, 46, 46) rgb(74, 73, 73);
+    scrollbar-width: 12%;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+
+}
+
+#side:hover {
+    overflow-y: scroll;
+}
+
+.div-side {
+    display: flex;
+    padding: 12px;
+    gap: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+
+.div-side:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+.div-side img {
+    margin-top: -2px;
+}
+
+.div-side p {
+    font-size: larger;
+}
+
+#main {
+    background-color: #0f0f0f;
+    grid-area: main;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    margin-right: 2px;
+    align-content: center;
+    gap: 5px;
+
+}
+
+.main .btn {
+    align-items: center;
+    background-color: rgb(68, 69, 69);
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+    border-radius: 25px;
+    font-size: 15px;
+
+}
+
+.main .btn:hover {
+    background-color: rgb(37, 37, 37);
+
+}
+
+#section1 {
+    background-color: #0f0f0f;
+    grid-area: section1;
+    padding: 8px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    scrollbar-color: rgb(47, 46, 46) rgb(74, 73, 73);
+   
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+
+}
+
+.boxs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+.box iframe {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+ 
+
+.box div p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 30px;
+}
